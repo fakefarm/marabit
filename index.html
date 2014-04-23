@@ -21,7 +21,7 @@
           <div class="races">
             <div ng-controller="RaceCtrl">
               <div class="race" ng-repeat="race in races">
-                <span>{{ race.title }}</span><span class="update-btn">update</span><span class="race-place">{{ race.position}} place</span>
+                <span>{{ race.title }}</span><span class="update-btn">update</span><span class="race-place">{{ race.position}} ({{ race.count}})</span>
               </div>
             </div>
           </div>
