@@ -21,12 +21,12 @@ gulp.task('slim', function(){
 });
 
 gulp.task('sass', function(){
-  gulp.src('./build/sass/*.sass')
-  .pipe(sass({
-    pretty: true
-  }))
-  .pipe(gulp.dest('src'));
+  gulp.src('build/scss/*.scss')
+    .pipe(sass())
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('src'));
 });
+
 
 gulp.task('watch', function(){
   var server = livereload();
@@ -35,8 +35,3 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', [ 'sass', 'slim', 'watch']);
-
-
-
-
-
