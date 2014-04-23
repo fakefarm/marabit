@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <title>Marabit</title>
+    <script src="data.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="src/js/controllers.js"></script>
+    <link href="src/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>
-      Marabit
-    </h1>
-    <p>
-      form habits together.
-    </p>
+    <div class="wrapper">
+      <div class="headline">
+        <div class="l-container">
+          <h1>
+            Races
+          </h1>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="l-container">
+          <div class="races">
+            <div ng-controller="RaceCtrl">
+              <div class="race" ng-repeat="race in races">
+                <span>{{ race.title }}</span><span class="update-btn">update</span><span class="race-place">{{ race.position}} place</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
