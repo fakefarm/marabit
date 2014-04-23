@@ -1,9 +1,13 @@
 site setup:
-☐ gulp
-☐ smacss
-☐ slim
-☐ angular
 ☐ jasmine
 ☐ neat
 ☐ bourbon
-✔ directory structure @done (14-04-22 19:37)
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ smacss @done (14-04-22 20:39)
+ ✔ slim @done (14-04-22 20:39)
+ ✔ gulp @done (14-04-22 20:39)
+ ✔ angular @done (14-04-22 20:39)
+ ✔ directory structure @done (14-04-22 19:37)
