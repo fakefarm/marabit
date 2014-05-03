@@ -1,4 +1,5 @@
-site setup:
+gems:
+☐ rspec
 ☐ jasmine
 ☐ neat
 ☐ bourbon
