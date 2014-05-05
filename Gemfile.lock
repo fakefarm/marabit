@@ -1,3 +1,9 @@
+PATH
+  remote: apps/race
+  specs:
+    race (0.0.1)
+      rails (~> 4.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -143,6 +149,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  race!
   rails (= 4.1.0)
   rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.3)

@@ -1,4 +1,12 @@
+require File.dirname(__FILE__) + '/lib/boot_inquirer'
+
 source 'https://rubygems.org'
+
+BootInquirer.each_active_app do |app|
+  gemspec path: "apps/#{app.gem_name}"
+end
+
+
 
 gem 'rails', '4.1.0'
 gem 'sass-rails', '~> 4.0.3'
