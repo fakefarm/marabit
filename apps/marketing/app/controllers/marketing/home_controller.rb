@@ -1,7 +1,7 @@
 module Marketing
   class HomeController < ::Marketing::ApplicationController
     def index
-      @greeting = "Hellow from Marabit!"
+      @greeting = "Hello from Marabit!"
     end
   end
 end

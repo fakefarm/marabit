@@ -1,3 +1,3 @@
 Race::Engine.routes.draw do
-  get 'races' => 'races#index'
+  get 'race' => 'main#index'
 end
