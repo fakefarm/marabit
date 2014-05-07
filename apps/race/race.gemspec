@@ -7,11 +7,11 @@ require "race/version"
 Gem::Specification.new do |s|
   s.name        = "race"
   s.version     = Race::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Race."
-  s.description = "TODO: Description of Race."
+  s.authors     = ["Dave Woodall"]
+  s.email       = ["dave@marabit.com"]
+  s.homepage    = "http://www.marabit.com"
+  s.summary     = "An engine to house all race related activities."
+  s.description = "Part of the larger, Marabit universe."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
