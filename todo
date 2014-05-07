@@ -1,9 +1,23 @@
-site setup:
-☐ gulp
-☐ smacss
-☐ slim
-☐ angular
+hello world view from race, into app:
+ ✔ routes @done (14-05-05 07:17)
+
+ ☐ controller
+ ☐ action
+ ☐ view
+
+
+
+gems:
+✔ rspec @done (14-05-03 08:24)
 ☐ jasmine
 ☐ neat
 ☐ bourbon
-✔ directory structure @done (14-04-22 19:37)
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ smacss @done (14-04-22 20:39)
+ ✔ slim @done (14-04-22 20:39)
+ ✔ gulp @done (14-04-22 20:39)
+ ✔ angular @done (14-04-22 20:39)
+ ✔ directory structure @done (14-04-22 19:37)
