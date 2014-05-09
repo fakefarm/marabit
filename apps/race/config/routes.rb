@@ -1,3 +1,4 @@
 Race::Engine.routes.draw do
-  get 'race' => 'main#index'
+  resources :rushes, path: 'races', as: 'races'
+  get 'race' => 'rushes#index'
 end
