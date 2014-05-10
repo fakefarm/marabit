@@ -10,11 +10,22 @@ Documenting trouble areas...
 - trying to manage git from one user, on two computers
 - cloned repo onto second computer, but the rails-engine branch didn't show. Had trouble pulling it down, and pushing it. Now the pushed branch is a different name. (remotes/origin/rails-engine)
 
-### Running tests
-Trying to run rspec from top of application, but it can't find the model.
-
 <hr>
 ## Solved Issues
+
+### Problem: Running tests
+Trying to run rspec from top of application, but it can't find the model.
+
+#### Solution: Namespace models
+Got tripped up with the namespacing issues again.
+I originally had;
+
+    rush = Rush.new
+
+But what I needed to do was
+
+    rush = Race::Rush.new
+
 
 ### Problem: Working with gems.
 Having trouble loading slim, and neat.

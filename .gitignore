@@ -9,7 +9,8 @@ tmp/*
 .rspec
 /.bundle
 /log/*
-log/*
+log/*.log
+log/development.log
 /tmp/*
 /db/*.sqlite3
 /public/system/*
