@@ -9,7 +9,16 @@ module Race
     end
 
     def create
-      @race = Rush.new
+      @race = Rush.new(rushes_params)
+      respond_to do |format|
+        if @race.save
+          format.html { redirect_to rushes_path }
+        end
+      end
+    end
+  private
+    def rushes_params
+      params.require(:rush).permit(:name)
     end
   end
 end
