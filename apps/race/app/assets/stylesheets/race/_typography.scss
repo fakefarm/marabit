@@ -1,0 +1,58 @@
+// Site resets
+body {
+  font-size: 100%; -webkit-font-smoothing: antialiased !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Google fonts
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic|Oswald:400,300);
+
+
+// Variables
+$condensed:  'Oswald', sans-serif;
+$serif: 'Lato', sans-serif;
+
+
+// Mixins
+
+@mixin common { @include reset-margin-padding; }
+
+@mixin headline {
+  @include common;
+  font-family: $serif;
+  font-weight: 900;
+  color: $sea-blue;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin tagline {
+  @include common;
+  font-family: $serif;
+  font-weight: 700;
+  color: $aqua;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+@mixin copy {
+  @include common;
+  font-family: $condensed;
+  font-weight:300;
+  color: $coffee;
+  font-size: 1.1em;
+}
+
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+
+// Classes
+.headline { @include headline; }
+.tagline  { @include tagline; }
+.copy     { @include copy; }
