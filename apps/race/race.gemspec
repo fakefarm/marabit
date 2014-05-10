@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency "slim"
   s.add_dependency "bourbon"
   s.add_dependency "neat"
+  s.add_dependency "simple_form"
   s.add_development_dependency "sqlite3"
 end
