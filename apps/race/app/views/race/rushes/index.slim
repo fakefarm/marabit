@@ -1,2 +1,3 @@
 h1.headline Races
-p.tagline= @race.first.name
+- @races.each do |race|
+  p.tagline= race.name
