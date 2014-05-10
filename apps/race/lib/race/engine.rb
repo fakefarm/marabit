@@ -9,9 +9,5 @@ module Race
          end
        end
      end
-
-     initializer 'race.asset_precompile_paths' do |app|
-       app.config.assets.precompile += ["race/manifests/*"]
-     end
   end
 end
