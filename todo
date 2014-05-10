@@ -4,7 +4,7 @@ hello world view from race, into app:
  ✔ action @done (14-05-07 07:16)
  ✔ view @done (14-05-07 07:16)
 
-
+ ☐ can't get slim to run
 
 gems:
 ✔ rspec @done (14-05-03 08:24)
