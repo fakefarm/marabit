@@ -1,20 +1,23 @@
-hello world view from race, into app:
- ✔ routes @done (14-05-05 07:17)
- ✔ controller @done (14-05-07 07:16)
- ✔ action @done (14-05-07 07:16)
- ✔ view @done (14-05-07 07:16)
-
- ☐ can't get slim to run
+create action:
+☐ strong parameters
+☐ before_filter
+☐ params
 
 gems:
-✔ rspec @done (14-05-03 08:24)
 ☐ jasmine
-☐ neat
-☐ bourbon
+☐ simple_form
 
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ routes @done (14-05-05 07:17) @project(hello world view from race, into app)
+ ✔ controller @done (14-05-07 07:16) @project(hello world view from race, into app)
+ ✔ action @done (14-05-07 07:16) @project(hello world view from race, into app)
+ ✔ view @done (14-05-07 07:16) @project(hello world view from race, into app)
+ ✔ can't get slim to run @done (14-05-10 17:05) @project(hello world view from race, into app)
+ ✔ rspec @done (14-05-03 08:24)
+ ✔ neat @done (14-05-10 17:05)
+ ✔ bourbon @done (14-05-10 17:05)
  ✔ smacss @done (14-04-22 20:39)
  ✔ slim @done (14-04-22 20:39)
  ✔ gulp @done (14-04-22 20:39)

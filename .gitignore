@@ -8,8 +8,6 @@ tmp/*
 .sass-cache
 .rspec
 /.bundle
-/log/*
-log/*.log
 log/development.log
 /tmp/*
 /db/*.sqlite3
