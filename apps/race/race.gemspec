@@ -22,5 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "bourbon"
   s.add_dependency "neat"
   s.add_dependency "simple_form"
+
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec-rails", "~> 3.0.0.beta"
+  s.add_development_dependency "shoulda-matchers"
 end
