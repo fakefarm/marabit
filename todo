@@ -1,5 +1,5 @@
 create action:
-☐ strong parameters
+✔ strong parameters @done (14-05-19 20:54)
 ☐ before_filter
 ☐ params
 
