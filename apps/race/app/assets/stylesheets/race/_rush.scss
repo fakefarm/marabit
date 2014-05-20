@@ -1,0 +1,44 @@
+.rush-container {
+  @include span-columns(6);
+  @include shift(3);
+  background: white;
+  @include row();
+}
+
+.rush-rank-section {
+  @include span-columns(3);
+  background: $orange;
+  height: 7em;
+  .rank {
+    background: white;
+    width: 5em;
+    margin: 0.8em auto 1em;
+    height: 5em;
+    border-radius: 75px;
+    h1 { // DW_TODO - move to different SMACSS file
+      font-family: $condensed;
+      text-align: center;
+      padding-top: 0.5em;
+      color: $sea-blue;
+    }
+  }
+}
+
+.rush-details {
+  @include span-columns(9);
+}
+
+.standings-and-engagement {
+  @include row;
+}
+
+.current-accomplished,
+.standing-area,
+.update-area {
+  @include span-columns(4);
+}
+
+h1, h2, h3, h4 { // DW_TODO - move to SMACSS
+  margin: 0;
+  padding: 0;
+}
