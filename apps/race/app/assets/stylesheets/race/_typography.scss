@@ -83,6 +83,7 @@ $sans: 'Lato', sans-serif;
 .headline       { @include headline; }
 .news-line      { @include news-line; }
 .current-status { @include current-status; }
+.standing-entry { @include current-status; }
 .tagline        { @include tagline; }
 .copy           { @include copy; }
 .big-link       { @include big-link; }
