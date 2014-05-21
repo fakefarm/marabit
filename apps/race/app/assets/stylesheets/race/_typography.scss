@@ -12,7 +12,7 @@ body {
 
 // Variables
 $condensed:  'Oswald', sans-serif;
-$serif: 'Lato', sans-serif;
+$sans: 'Lato', sans-serif;
 
 
 // Mixins
@@ -21,17 +21,25 @@ $serif: 'Lato', sans-serif;
 
 @mixin headline {
   @include common;
-  font-family: $serif;
-  font-weight: 900;
+  font-family: $sans;
+  font-weight: 700;
   color: $sea-blue;
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
+  font-size: 2em;
+}
+
+@mixin news-line {
+  @include common;
+  font-family: $condensed;
+  font-weight: 300;
+  color: $coffee;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 @mixin tagline {
   @include common;
-  font-family: $serif;
+  font-family: $sans;
   font-weight: 700;
   color: $aqua;
   font-size: 2em;
@@ -46,6 +54,25 @@ $serif: 'Lato', sans-serif;
   font-size: 1.1em;
 }
 
+@mixin current-status {
+  @include common;
+  font-family: $condensed;
+  font-weight: 300;
+  color: $sea-blue;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+@mixin big-link {
+  @include common;
+  font-family: $sans;
+  font-weight:400;
+  color: $aqua;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
 @mixin reset-margin-padding {
   margin: 0;
   padding: 0;
@@ -53,6 +80,10 @@ $serif: 'Lato', sans-serif;
 
 
 // Classes
-.headline { @include headline; }
-.tagline  { @include tagline; }
-.copy     { @include copy; }
+.headline       { @include headline; }
+.news-line      { @include news-line; }
+.current-status { @include current-status; }
+.standing-entry { @include current-status; }
+.tagline        { @include tagline; }
+.copy           { @include copy; }
+.big-link       { @include big-link; }

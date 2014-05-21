@@ -1,7 +1,7 @@
 module Race
   class RushesController < ::Race::ApplicationController
     def index
-      @races = Rush.all
+      @races = Rush.all.first
     end
 
     def new
