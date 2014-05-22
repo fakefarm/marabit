@@ -24,7 +24,7 @@ $sans: 'Lato', sans-serif;
   font-family: $sans;
   font-weight: 700;
   color: $sea-blue;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 @mixin news-line {
@@ -32,7 +32,7 @@ $sans: 'Lato', sans-serif;
   font-family: $condensed;
   font-weight: 300;
   color: $coffee;
-  font-size: 1.2em;
+  font-size: 1em;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 }
@@ -56,6 +56,17 @@ $sans: 'Lato', sans-serif;
 
 @mixin current-status {
   @include common;
+  text-align: center;
+  font-family: $condensed;
+  font-weight: 300;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+@mixin standing-entry {
+  @include common;
   font-family: $condensed;
   font-weight: 300;
   color: $sea-blue;
@@ -71,6 +82,9 @@ $sans: 'Lato', sans-serif;
   color: $aqua;
   font-size: 1.1em;
   text-decoration: none;
+  &:first-child {
+    margin-right: 1em;
+  }
 }
 
 @mixin reset-margin-padding {
@@ -83,7 +97,7 @@ $sans: 'Lato', sans-serif;
 .headline       { @include headline; }
 .news-line      { @include news-line; }
 .current-status { @include current-status; }
-.standing-entry { @include current-status; }
+.standing-entry { @include standing-entry; }
 .tagline        { @include tagline; }
 .copy           { @include copy; }
 .big-link       { @include big-link; }
