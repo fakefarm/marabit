@@ -5,11 +5,21 @@
   margin-bottom: 0.5em;
 }
 
-.rush-wrapper {}
+.rush-wrapper {
+  margin-bottom: 1.5em;
+}
 
 .rush-entry {
   background: white;
   @include row;
+}
+
+.rush-entry:hover + .rush-standings {
+  display: block;
+}
+
+@-webkit-keyframes {
+
 }
 
 .rank-wrapper {
@@ -79,6 +89,7 @@
 .rush-standings {
   padding: 0.25em 0.5em 0.25em;
   background: white;
+  display: none;
 
   .user {
     border-bottom: 1px solid $lite-coffee;
