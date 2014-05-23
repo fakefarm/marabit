@@ -1,15 +1,18 @@
-.rush-entry {
+// All races
+.rush-container {
   @include clearfix;
   @include span-columns(12);
   margin-bottom: 0.5em;
 }
 
-.rush-container {
+.rush-wrapper {}
+
+.rush-entry {
   background: white;
   @include row;
 }
 
-.rush-rank-section {
+.rank-wrapper {
   @include span-columns(4);
   background: $orange;
   .rank {
@@ -27,50 +30,53 @@
       color: $sea-blue;
     }
   }
+  .completed {
+    background: $sea-blue;
+    margin-top: 0.5em;
+    padding: 0.25em 0;
+  }
 }
 
-.rush-details {
+.details-wrapper {
   @include span-columns(8);
+
+  .title {
+    padding-top: 1em;
+  }
+
+  .news {
+    border-top: 1px solid $lite-coffee;
+    border-bottom: 1px solid $lite-coffee;
+    margin: 0.5em 0 0 0;
+    padding: 0.25em 0 0.5em;
+  }
+
+  .links-wrapper {
+    @include row;
+  }
 }
 
-.title {
-  padding-top: 1em;
-}
-
-.standings-and-engagement {
-  @include row;
-}
-
-.current-accomplished {
-  background: $sea-blue;
-  margin-top: 0.5em;
-  padding: 0.25em 0;
-}
-
-.standing-area,
-.update-area {
+.action-item {
   @include span-columns(6);
   padding-top: 1em;
   padding-bottom: 0.5em;
+
+  &.update-area   { text-align: right; }
+  &.standing-area { text-align: left; }
+
+  .big-link a{ // TODO - move links into their own file.
+    text-decoration: none;
+    display: block;
+
+    &:hover,
+    &:active {
+    text-decoration: underline;
+    }
+  }
 }
 
-.update-area { text-align: right; }
-.standing-area { text-align: left; }
 
-
-.big-link a{
-  text-decoration: none;
-  display: block;
-}
-
-.latest-news {
-  border-top: 1px solid $lite-coffee;
-  border-bottom: 1px solid $lite-coffee;
-  margin: 0.5em 0 0 0;
-  padding: 0.25em 0 0.5em;
-}
-
-.standings {
+.rush-standings {
   padding: 0.25em 0.5em 0.25em;
   background: white;
 
