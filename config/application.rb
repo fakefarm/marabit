@@ -14,11 +14,6 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 # require railties and engines here.
-require_relative "../lib/boot_inquirer"
-
-BootInquirer.each_active_app do |app|
-  require app.gem_name
-end
 
 module Marabit2
   class Application < Rails::Application

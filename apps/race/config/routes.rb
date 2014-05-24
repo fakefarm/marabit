@@ -1,5 +1,5 @@
 Race::Engine.routes.draw do
-  get 'races' => 'rushes#index'
+  root :to => 'rushes#index'
   get 'new-race' => 'rushes#new'
-  resources :rushes
+  resources :rushes, only: [:new, :create]
 end
