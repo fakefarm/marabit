@@ -12,6 +12,8 @@ gem 'thin'
 gem "race", path: "apps/race"
 gem 'pg'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem "capybara", "2.1.0"
