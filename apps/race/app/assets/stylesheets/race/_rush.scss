@@ -25,6 +25,9 @@
 .rank-wrapper {
   @include span-columns(4);
   background: $orange;
+  &.third {
+    background: $aqua;
+  }
   .rank {
     background: white;
     width: 5em;

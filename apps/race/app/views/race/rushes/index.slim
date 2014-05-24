@@ -19,7 +19,7 @@
     .rush-standings
       .user
         span.rank.standing-entry 1.
-        span.name.standing-entry Dave
+        span.name.standing-entry Me
         span.status.news-line 2 miles, yesterday
         span.total.standing-entry 321
       .user
@@ -37,3 +37,36 @@
         span.name.standing-entry Andrej
         span.status.news-line 14 miles, 2 days ago
         span.total.standing-entry 310
+  .rush-wrapper
+      .rush-entry
+        .rank-wrapper.third
+          .rank
+            h1 3rd
+          .completed
+            h3.current-status 84 pages.
+        .details-wrapper
+          .title
+            h2.headline Read 300 pages
+          .news
+            h3.news-line Dakota (1st) read 5 pages.
+          .links-wrapper
+            .action-item.standing-area
+              h4.big-link= link_to 'standings', ''
+            .action-item.update-area
+              h4.big-link= link_to 'update', ''
+      .rush-standings
+        .user
+          span.rank.standing-entry 1.
+          span.name.standing-entry Dakota
+          span.status.news-line 5 pages, today
+          span.total.standing-entry 120
+        .user
+          span.rank.standing-entry 2.
+          span.name.standing-entry Aaron
+          span.status.news-line 15 pages, yesterday
+          span.total.standing-entry 105
+        .user
+          span.rank.standing-entry 3.
+          span.name.standing-entry Me
+          span.status.news-line 10 pages, yesterday
+          span.total.standing-entry 84
