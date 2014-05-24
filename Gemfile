@@ -9,9 +9,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'thin'
-gem 'sqlite3'
 gem "race", path: "apps/race"
-
+gem 'sqlite3', '1.3.9'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
@@ -25,8 +24,7 @@ end
 group :test do
   gem 'shoulda-matchers'
 end
-gem 'shoulda-matchers'
-gem 'rspec-rails', '~> 3.0.0.beta'
+
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
