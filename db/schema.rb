@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140508022005) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "race_rushes", force: true do |t|
     t.string   "name"
     t.datetime "created_at"

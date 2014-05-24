@@ -10,15 +10,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'thin'
 gem "race", path: "apps/race"
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem "capybara", "2.1.0"
-  gem 'sqlite3', '1.3.9'
-end
-
-group :production do
-  gem 'pg'
 end
 
 group :test do
