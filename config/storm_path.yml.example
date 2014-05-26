@@ -1,2 +1,6 @@
-id: xxxxxxxxxxxxxxxx
-secret: yyyyyyyyyyyyyyyyyyyyyyyyy
+id: ENV["STORM_ID"]
+secret: ENV["STORM_SECRET"]
+
+
+heroku config:set STORM_ID='33555VHTBBU83U5BAAV4LZYPW'
+heroku config:set STORM_SECRET='lIJDbcF69Aj+hDk+gGCB0Vfbt9Zjy4/QlmIKaE6iSI' --app marabit
