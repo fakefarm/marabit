@@ -1,7 +1,7 @@
 module Race
   class RushesController < ::Race::ApplicationController
     def index
-      @races = Rush.all.first
+      @rushes = Rush.all
     end
 
     def new
@@ -12,7 +12,7 @@ module Race
       @race = Rush.new(rushes_params)
       respond_to do |format|
         if @race.save
-          format.html { redirect_to rushes_path }
+          format.html { redirect_to root_path }
         end
       end
     end

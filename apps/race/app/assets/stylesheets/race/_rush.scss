@@ -122,7 +122,7 @@
   padding: 0.25em 0.5em 0.25em;
   background: white;
   @include row;
-  input[type="number"] {
+  input[type="number"] { // Todo - move into input module
     border-radius: 0;
     @include span-columns(6);
     border: none;
@@ -131,7 +131,7 @@
     font-size: 2em;
     color: $coffee;
   }
-  input[type="submit"] {
+  input[type="submit"] { // Todo - move into input module
     -webkit-appearance: none;
     border-radius: 0;
     @include span-columns(6);

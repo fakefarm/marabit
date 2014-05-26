@@ -1,9 +1,10 @@
-h1.headline New Race
-= simple_form_for(@race) do |f|
-  = f.error_notification
-  = f.input :name
-  = f.error :base
-  = f.button :submit
+.rush-container
+  h1.headline New Race
+  = simple_form_for(@race) do |f|
+    = f.error_notification
+    = f.input :name
+    = f.error :base
+    = f.button :submit
 
 
 
