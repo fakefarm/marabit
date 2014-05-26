@@ -17,6 +17,9 @@ Bundler.require(*Rails.groups)
 
 module Marabit2
   class Application < Rails::Application
+    storm_path_config_file = File.join(Rails.root, 'config', 'storm_path.yml')
+    config.storm_path_api_key = YAML::load(File.open(storm_path_config_file)).with_indifferent_access
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
