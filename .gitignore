@@ -17,7 +17,6 @@ tmp/cache/assets/development/sprockets/*
 /coverage/
 /spec/tmp/*
 **.orig
-config/*.yml
 rerun.txt
 pickle-email-*.html
 Gemfile*
