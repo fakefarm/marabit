@@ -16,7 +16,7 @@
             h4.big-link= link_to 'standings', ''
           .action-item.update-area
             h4.big-link= link_to 'update', ''
-    .rush-standings
+    .rush-standings data-content='area'
       .user
         span.rank.standing-entry 1.
         span.name.standing-entry Me
@@ -37,6 +37,6 @@
         span.name.standing-entry Andrej
         span.status.news-line 14 miles, 2 days ago
         span.total.standing-entry 310
-    .rush-update
+    .rush-update data-content='area'
       input type='number' pattern="\d*"
       input type='submit'

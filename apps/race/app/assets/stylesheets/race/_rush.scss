@@ -14,10 +14,6 @@
   @include row;
 }
 
-.rush-entry:hover + .rush-standings {
-  display: block;
-}
-
 @-webkit-keyframes {
 
 }
@@ -92,7 +88,6 @@
 .rush-standings {
   padding: 0.25em 0.5em 0.25em;
   background: white;
-  display: none;
 
   .user {
     border-bottom: 1px solid $lite-coffee;
