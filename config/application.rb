@@ -18,7 +18,17 @@ Bundler.require(*Rails.groups)
 module Marabit2
   class Application < Rails::Application
     storm_path_config_file = File.join(Rails.root, 'config', 'storm_path.yml')
-    config.storm_path_api_key = YAML::load(File.open(storm_path_config_file)).with_indifferent_access
+
+    if File.exists?(storm_path_config_file)
+      config.storm_path_api_key = YAML::load(File.open(storm_path_config_file)).with_indifferent_access
+    else
+      api_key = {
+          id: ENV["STORM_ID"],
+          secret: ENV["STORM_SECRET"]
+      }
+      config.storm_path_api_key = api_key
+    end
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

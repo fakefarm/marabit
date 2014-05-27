@@ -1,2 +1,0 @@
-id: ENV["STORM_ID"]
-secret: ENV["STORM_SECRET"]
