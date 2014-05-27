@@ -1,3 +1,12 @@
+| You are logged in as:
+- if @account_name
+  p
+
+    = @account_name
+- else
+  i NO ONE
+
+
 ul
 - @accounts.each do |account|
   li

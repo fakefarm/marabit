@@ -17,6 +17,7 @@ gem 'rails_12factor', group: :production
 gem "stormpath-sdk", ">= 1.0.0.beta"
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem "capybara", "2.1.0"
 end
