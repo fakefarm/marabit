@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140528135052) do
+ActiveRecord::Schema.define(version: 20140528144515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 20140528135052) do
     t.integer  "quantity"
     t.integer  "rush_id"
   end
-
-  add_index "race_numeric_updates", ["rush_id"], name: "index_race_numeric_updates_on_rush_id", using: :btree
 
   create_table "race_rushes", force: true do |t|
     t.string   "name"
