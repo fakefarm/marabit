@@ -1,5 +1,5 @@
 module Race
   class NumericUpdate < ActiveRecord::Base
-    validates_presence_of :entry
+    validates_presence_of :quantity
   end
 end

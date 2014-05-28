@@ -1,3 +1,4 @@
 .rush-update data-content='area'
-  input type='number' pattern="\d*"
-  input type='submit'
+  = simple_form_for(@update) do |f|
+    = f.input_field :quantity
+    = f.button :submit, 'check point'

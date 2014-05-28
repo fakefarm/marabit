@@ -2,10 +2,14 @@ module Race
   class RushesController < ::Race::ApplicationController
     def index
       @rushes = Rush.all
+      @update = NumericUpdate.new
+      @updates = NumericUpdate.all
+      @total_updates = NumericUpdate.sum('quantity')
     end
 
     def new
       @race = Rush.new
+      @update = NumericUpdate.new
     end
 
     def create

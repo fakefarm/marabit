@@ -1,0 +1,7 @@
+.rush-container
+  h1.headline New Update
+  = simple_form_for(@update) do |f|
+    = f.error_notification
+    = f.input :quantity
+    = f.error :base
+    = f.button :submit

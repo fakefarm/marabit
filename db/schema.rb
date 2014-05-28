@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140527021100) do
   create_table "race_numeric_updates", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "entry"
+    t.integer  "quantity"
   end
 
   create_table "race_rushes", force: true do |t|

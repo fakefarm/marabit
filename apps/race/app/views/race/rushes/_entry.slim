@@ -3,12 +3,14 @@
     .rank
       h1 1st
     .completed
-      h3.current-status 321 mi.
+      h3.current-status= pluralize(@total_updates, 'mile')
   .details-wrapper
     .title
       h2.headline= rush.name
     .news
-      h3.news-line Steve (2nd) completed 12 miles.
+      h3.news-line
+        ' Dave ran
+        = pluralize(@updates.last.quantity, 'mile')
     .links-wrapper
       .action-item.standing-area
         h4.big-link= link_to 'standings', ''
