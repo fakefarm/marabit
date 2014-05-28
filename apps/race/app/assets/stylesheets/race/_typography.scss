@@ -79,12 +79,10 @@ $sans: 'Lato', sans-serif;
   @include common;
   font-family: $sans;
   font-weight:400;
-  color: $aqua;
-  font-size: 1.1em;
+  color: $sea-blue;
+  font-size: 3em;
   text-decoration: none;
-  &:first-child {
-    margin-right: 1em;
-  }
+  padding: 0 0.2em;
 }
 
 @mixin reset-margin-padding {
