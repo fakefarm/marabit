@@ -4,9 +4,9 @@
     span.name.standing-entry Me
     span.status.news-line
       ' ran
-      = pluralize(@updates.last.quantity, 'mile')
+      = show_status(@update)
       ',
-      = distance_of_time_in_words(Time.now, @updates.last.created_at)
+      = show_time_status(@update)
       '
       ' ago
 

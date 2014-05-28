@@ -10,7 +10,7 @@
     .news
       h3.news-line
         ' Dave ran
-        = pluralize(@updates.last.quantity, 'mile')
+        = show_status(@update)
     .links-wrapper
       .action-item.standing-area
         h4.big-link= link_to 'standings', ''
