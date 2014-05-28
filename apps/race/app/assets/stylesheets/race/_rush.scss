@@ -95,14 +95,14 @@
     margin: 0.25em 0;
     @include clearfix;
     .rank {
-      @include span-columns(1);
+      @include span-columns(0.5);
     }
     .name {
      text-transform: capitalize;
-     @include span-columns(3);
+     @include span-columns(1);
     }
     .status {
-     @include span-columns(5);
+     @include span-columns(7.5);
      text-align: right;
     }
     .total {

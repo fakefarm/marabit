@@ -5,5 +5,9 @@
     span.status.news-line
       ' ran
       = pluralize(@updates.last.quantity, 'mile')
+      ',
+      = distance_of_time_in_words(Time.now, @updates.last.created_at)
+      '
+      ' ago
 
     span.total.standing-entry= pluralize(@total_updates, 'mile')
