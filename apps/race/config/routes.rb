@@ -4,6 +4,6 @@ Race::Engine.routes.draw do
   get 'users' => 'users#index'
   get 'sessions' => 'sessions#index'
   post 'sessions' => 'sessions#create'
-  resources :rushes, only: [:new, :create]
+  resources :rushes, only: [:index, :new, :create]
   resources :numeric_updates
 end
