@@ -4,8 +4,8 @@ $ ->
   $('.big-link a').click (e) ->
     e.preventDefault()
 
-  $('.standing-area .big-link a').click ->
+  $('.standing-area').click ->
     $('.rush-standings').toggle()
 
-  $('.update-area .big-link a').click ->
+  $('.update-area').click ->
     $('.rush-update').toggle()

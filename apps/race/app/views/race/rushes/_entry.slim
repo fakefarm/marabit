@@ -7,12 +7,8 @@
   .details-wrapper
     .title
       h2.headline= rush.name
-    .news
-      h3.news-line
-        ' Dave ran
-        = personal_score(@updates, rush)
     .links-wrapper
       .action-item.standing-area
-        h4.big-link= link_to 'standings', ''
+        h4.big-link.fa.fa-group
       .action-item.update-area
-        h4.big-link= link_to 'add', ''
+        h4.big-link.fa.fa-plus-square

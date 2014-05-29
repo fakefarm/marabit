@@ -6,12 +6,14 @@
 }
 
 .rush-wrapper {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .rush-entry {
   background: white;
   @include row;
+  box-shadow: 0px 0px 1px 0px $coffee;
+  border-radius:0.2em;
 }
 
 @-webkit-keyframes {
@@ -21,6 +23,8 @@
 .rank-wrapper {
   @include span-columns(4);
   background: $orange;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
   &.third {
     background: $aqua;
   }
@@ -43,14 +47,17 @@
     background: $sea-blue;
     margin-top: 0.5em;
     padding: 0.25em 0;
+    border-bottom-left-radius: 0.2em;
   }
 }
 
 .details-wrapper {
   @include span-columns(8);
+  padding-right: 0.5em;
 
   .title {
-    padding-top: 1em;
+    padding: 0.5em 0;
+    border-bottom: 1px solid $lite-coffee;
   }
 
   .news {
