@@ -3,6 +3,8 @@
   = simple_form_for(@race) do |f|
     = f.error_notification
     = f.input :name
+    = f.input :metric, placeholder: 'singular mile, page, pushup'
+    = f.input :description, placeholder: 'background, or prize info.'
     = f.error :base
     = f.button :submit
 
