@@ -19,7 +19,7 @@ module Race
 
   private
     def numeric_update_params
-      params.require(:numeric_update).permit(:quantity)
+      params.require(:numeric_update).permit(:quantity, :rush_id)
     end
   end
 end
