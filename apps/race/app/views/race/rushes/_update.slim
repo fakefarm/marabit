@@ -1,4 +1,5 @@
 .rush-update data-content='area'
   = simple_form_for(@update) do |f|
+    = f.input :rush_id, as: :hidden, input_html: { value: rush.id }
     = f.input_field :quantity
     = f.button :submit, 'log'

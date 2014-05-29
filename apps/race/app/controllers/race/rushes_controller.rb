@@ -4,7 +4,6 @@ module Race
       @rushes = Rush.all
       @update = NumericUpdate.new
       @updates = NumericUpdate.all
-      @total_updates = NumericUpdate.sum('quantity')
     end
 
     def new

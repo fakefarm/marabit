@@ -4,10 +4,10 @@
     span.name.standing-entry Me
     span.status.news-line
       ' ran
-      = show_status(@update)
+      = personal_score(@updates, rush)
       ',
       = show_time_status(@update)
       '
       ' ago
 
-    span.total.standing-entry= pluralize(@total_updates, 'mile')
+    span.total.standing-entry= personal_score(@updates, rush)

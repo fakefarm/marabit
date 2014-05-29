@@ -3,11 +3,10 @@
     .rank
       h1 1st
     .completed
-      h3.current-status= pluralize(@total_updates, 'mile')
+      h3.current-status= personal_score(@updates, rush)
   .details-wrapper
     .title
       h2.headline= rush.name
-
     .links-wrapper
       .action-item.standing-area
         h4.big-link.fa.fa-group
