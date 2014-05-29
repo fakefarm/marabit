@@ -3,14 +3,15 @@
     .rank
       h1 1st
     .completed
-      h3.current-status= pluralize(@total_updates, 'mile')
+      - total = @updates.map { |n| if n.rush_id == rush.id; n.quantity end }.compact.reduce(:+)
+      h3.current-status= pluralize(total, 'mile')
   .details-wrapper
     .title
       h2.headline= rush.name
     .news
       h3.news-line
         ' Dave ran
-        = show_status(@update)
+        = show_status(@updates)
     .links-wrapper
       .action-item.standing-area
         h4.big-link= link_to 'standings', ''
