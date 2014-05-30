@@ -1,9 +1,7 @@
-simple_update:
-☐ gems
-☐ tests
-☐ rspec
-☐ simple update
-☐ tie in update with race
+ ☐ add index_edit
+ ☐ figure out ot to toggle animation on/off
+ ☐ write some tests
+ ☐
 
 create action:
 ✔ strong parameters @done (14-05-19 20:54)

@@ -25,7 +25,7 @@
 }
 
 .rank-wrapper {
-  @include span-columns(4);
+  @include span-columns(3);
   background: $orange;
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
@@ -34,16 +34,17 @@
   }
   .rank {
     background: white;
-    width: 5em;
+    width: 3em;
+    height: 3em;
     margin: 0.5em auto 0em;
-    height: 5em;
     border-radius: 75px;
     h1 { // DW_TODO - move to different SMACSS file
+      font-size: 1.5em;
       margin: 0;
       padding: 0;
       font-family: $condensed;
       text-align: center;
-      padding-top: 0.5em;
+      padding-top: 0.2em;
       color: $sea-blue;
     }
   }
@@ -56,7 +57,7 @@
 }
 
 .details-wrapper {
-  @include span-columns(8);
+  @include span-columns(9);
   padding-right: 0.5em;
 
   .title {
@@ -78,7 +79,7 @@
 
 .action-item {
   @include span-columns(6);
-  padding-top: 1em;
+  padding-top: 0.4em;
   padding-bottom: 0.5em;
 
   &.update-area   { text-align: right; }

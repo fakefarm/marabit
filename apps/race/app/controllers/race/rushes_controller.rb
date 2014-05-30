@@ -6,6 +6,10 @@ module Race
       @updates = NumericUpdate.all
     end
 
+    def index_edit
+      @rushes = Rush.all
+    end
+
     def new
       @race = Rush.new
       @update = NumericUpdate.new
