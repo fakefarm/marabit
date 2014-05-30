@@ -21,7 +21,7 @@ module Race
     end
   private
     def rushes_params
-      params.require(:rush).permit(:name)
+      params.require(:rush).permit(:name, :metric, :description)
     end
   end
 end
