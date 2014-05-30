@@ -8,7 +8,7 @@
     .title
       h2.headline= rush.name
     .links-wrapper
-      .action-item.standing-area
+      .action-item.standing-area data-rush='id_#{index}'
         h4.big-link.fa.fa-group
-      .action-item.update-area
-        h4.big-link.fa.fa-plus-square
+      .action-item.update-area data-rush='id_#{index}'
+        h4.big-link.fa.fa-check-circle
