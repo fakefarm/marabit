@@ -16,6 +16,10 @@
   border-radius:0.2em;
 }
 
+.rush-faint { // todo - move to proper state smacss
+  opacity: 0.5
+}
+
 @-webkit-keyframes {
 
 }
@@ -95,6 +99,9 @@
 .rush-standings {
   padding: 0.25em 0.5em 0.25em;
   background: white;
+  display: none;
+  z-index: -100;
+  position: relative;
 
   .user {
     border-bottom: 1px solid $lite-coffee;
@@ -126,9 +133,10 @@
 }
 
 .rush-update {
+  @include row;
+  display: none;
   padding: 0.25em 0.5em 0.25em;
   background: white;
-  @include row;
   input[type="number"] { // Todo - move into input module
     border-radius: 0;
     @include span-columns(6);
