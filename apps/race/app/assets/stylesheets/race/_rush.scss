@@ -99,10 +99,10 @@
 
 .rush-standings {
   padding: 0.25em 0.5em 0.25em;
-  background: white;
+  background: $tanner;
   display: none;
-  z-index: -100;
   position: relative;
+  border-radius: 3px;
 
   .user {
     border-bottom: 1px solid $lite-coffee;
@@ -127,34 +127,34 @@
     &:last-child {
       border-bottom: none;
     }
-    &:hover {
-      background: white;
-    }
   }
 }
 
 .rush-update {
   @include row;
+  background: $tanner;
   display: none;
   padding: 0.25em 0.5em 0.25em;
-  background: white;
+
+  border-radius: 3px;
   input[type="number"] { // Todo - move into input module
     border-radius: 0;
     @include span-columns(6);
     border: none;
     background: $lite-coffee;
     padding: 0.5em;
-    font-size: 2em;
+    font-size: 1.5em;
     color: $coffee;
   }
   input[type="submit"] { // Todo - move into input module
     -webkit-appearance: none;
-    border-radius: 0;
+    border-radius: 5px;
     @include span-columns(6);
     background: $orange;
     color: white;
     border: none;
-    padding: 0.5em;
-    font-size: 2em;
+    padding: 0.45em;
+    font-size: 1.5em;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
   }
 }
