@@ -6,7 +6,7 @@ $ ->
   )
 
 
-
+# One of first problems I see with this approach is that the JS will break when the DOM is refactored.
 class @Rush
   constructor: (race)->
     # variables
@@ -17,6 +17,9 @@ class @Rush
     @standingsBtn = @race.find('.standing-area')
     @update = race.find('.rush-update')
     @updateBtn = @race.find('.update-area')
+    $allStandings = $('.rush-standings')
+    $allupdates = $('.rush-update')
+
 
     # setup classes
     @race.find('.rush-standings').addClass('animated flipInX')
@@ -24,9 +27,12 @@ class @Rush
 
     # setup buttons
     @standingsBtn.click =>
-      @update.hide()
+      _clearAll()
       @standings.toggle()
     @updateBtn.click =>
-      @standings.hide()
+      _clearAll()
       @update.toggle()
 
+    _clearAll = ->
+      $allStandings.hide()
+      $allupdates.hide()
