@@ -1,28 +1,17 @@
 // All races
-.rush-container {
-  @include clearfix;
-  @include span-columns(12);
-  margin-bottom: 0.5em;
-}
 
 .rush-wrapper {
   margin-bottom: 0.5em;
 }
 
 .rush-entry {
-  background: white;
-  @include row;
-  box-shadow: 0px 0px 1px 0px $coffee;
-  border-radius:0.2em;
+  @extend .primary-background
 }
 
 .rush-faint { // todo - move to proper state smacss
   opacity: 0.5
 }
 
-@-webkit-keyframes {
-
-}
 
 .rank-wrapper {
   @include span-columns(3);
@@ -138,23 +127,9 @@
 
   border-radius: 3px;
   input[type="number"] { // Todo - move into input module
-    border-radius: 0;
     @include span-columns(6);
-    border: none;
-    background: $lite-coffee;
-    padding: 0.5em;
-    font-size: 1.5em;
-    color: $coffee;
   }
   input[type="submit"] { // Todo - move into input module
-    -webkit-appearance: none;
-    border-radius: 5px;
     @include span-columns(6);
-    background: $orange;
-    color: white;
-    border: none;
-    padding: 0.45em;
-    font-size: 1.5em;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
   }
 }

@@ -1,0 +1,6 @@
+.primary-background {
+  background: white;
+  @include row;
+  box-shadow: 0px 0px 1px 0px $coffee;
+  border-radius:0.2em;
+}

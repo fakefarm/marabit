@@ -1,4 +1,4 @@
-.rush-container#rush-container
+.l-wrapper#rush-container
   - @rushes.each_with_index do |rush, i|
     .rush-wrapper data-id="rush_#{rush.id}" id="#{rush.id}"
         = render 'entry',     rush: rush, index: i

@@ -1,0 +1,24 @@
+  input[type="number"],
+  input[type="text"],
+  textarea,
+   {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background: $lite-coffee;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: $coffee;
+  }
+
+  input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background: $orange;
+    color: white;
+    border: none;
+    padding: 0.45em;
+    font-size: 1.5em;
+    margin: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+  }

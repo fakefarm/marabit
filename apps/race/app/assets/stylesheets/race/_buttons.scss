@@ -1,0 +1,15 @@
+.move-btn {
+  background: $aqua;
+}
+
+.back-btn {
+  background: $coffee;
+}
+.two-btn-group {
+  @include row();
+  .move-btn, .back-btn {
+    @include span-columns(6);
+    margin: 0;
+    padding: 0;
+  }
+}

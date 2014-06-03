@@ -1,12 +1,29 @@
-.rush-container
-  h1.headline New Race
+.l-wrapper
   = simple_form_for(@race) do |f|
     = f.error_notification
-    = f.input :name
-    = f.input :metric, placeholder: 'singular mile, page, pushup'
-    = f.input :description, placeholder: 'background, or prize info.'
-    = f.error :base
-    = f.button :submit
+    .stage#race-name
+      h2.headline Race Name
+      p.copy
+        |
+        b' Tip
+        '
+          Races should take some time to complete. So, make it long enough that it will require discipline and perseverance to win. Like Running 1,500 miles. Or, reading 1,000 pages.
+      = f.input_field :name, placeholder: '"Swim 2,000 laps"', autofocus: true
+      h3.big-link.move-btn next >>
+    .stage#race-metric
+      h2.headline Race Metric
+      p.copy What is the unit of measurement you will use to track this race?
+      = f.input_field :metric, placeholder: 'singular mile, page, pushup'
+      h3.big-link.move-btn next >>
+    .stage#race-desc
+      h2.headline Info
+      p.copy provide some background info, or prizes, or other information you want the participants to know.
+      = f.input_field :description, as: :text, placeholder: 'background, or prize info.'
+      h3.big-link.move-btn#grab-content next >>
+    .submit-race#race-review
+      h2.headline Let's do this.
+      = f.error :base
+      = f.button :submit
 
 
 
