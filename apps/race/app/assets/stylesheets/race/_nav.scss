@@ -4,7 +4,7 @@
     @include row;
 
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     padding: 0;
     background: white;
@@ -16,9 +16,8 @@
   .nav-item {
     @include span-columns(3);
     @include omega(4n);
-
+    text-align: center;
     display: block;
-    padding: 0 0.25em;
     margin-top: 0.15em;
     margin-bottom: 0.15em;
     border-right: 1px solid $tan;
