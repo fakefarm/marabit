@@ -1,29 +1,67 @@
-.l-wrapper
+.l-wrapper.animated.fadeInDown
   = simple_form_for(@race) do |f|
     = f.error_notification
     .stage#race-name
-      h2.headline Race Name
+      .fa-new-rush.fa.fa-flash.headline.fadeInDown
+      h2.headline Start a New Race!
       p.copy
         |
         b' Tip
         '
           Races should take some time to complete. So, make it long enough that it will require discipline and perseverance to win. Like Running 1,500 miles. Or, reading 1,000 pages.
       = f.input_field :name, placeholder: '"Swim 2,000 laps"', autofocus: true
-      h3.big-link.move-btn next >>
+      .status-bar
+        .fa.fa-circle
+        .fa.fa-circle-o
+        .fa.fa-circle-o
+        .fa.fa-circle-o
+      .wide-btn
+        h3.big-link.move-btn
+          ' next
+          span.fa.fa-chevron-right
     .stage#race-metric
-      h2.headline Race Metric
-      p.copy What is the unit of measurement you will use to track this race?
-      = f.input_field :metric, placeholder: 'singular mile, page, pushup'
-      h3.big-link.move-btn next >>
+      .fa-new-rush.fa.fa-road.headline.fadeInDown
+      h2.headline What's the metric?
+      p.copy.center What is the unit of measurement for this race?
+      = f.input_field :metric, placeholder: '"mile"'
+      .status-bar
+        .fa.fa-circle-o
+        .fa.fa-circle
+        .fa.fa-circle-o
+        .fa.fa-circle-o
+      .nav-btns
+        h3.big-link.back-btn
+          span.fa.fa-chevron-left
+          ' prev
+        h3.big-link.move-btn
+          ' next
+          span.fa.fa-chevron-right
+
     .stage#race-desc
-      h2.headline Info
-      p.copy provide some background info, or prizes, or other information you want the participants to know.
-      = f.input_field :description, as: :text, placeholder: 'background, or prize info.'
-      h3.big-link.move-btn#grab-content next >>
+      .fa-new-rush.fa.fa-trophy.headline.fadeInDown
+      h2.headline What's the prize?
+      p.copy.center Every race should have a prize.
+      = f.input_field :description, as: :text, placeholder: '"Eternal bragging rights."'
+      .status-bar
+        .fa.fa-circle-o
+        .fa.fa-circle-o
+        .fa.fa-circle
+        .fa.fa-circle-o
+      .nav-btns
+        h3.big-link.back-btn
+          span.fa.fa-chevron-left
+          ' prev
+        h3.big-link.move-btn#grab-content
+          ' next
+          span.fa.fa-chevron-right
+
     .submit-race#race-review
-      h2.headline Let's do this.
+      .fa-new-rush.fa.fa-flag-checkered.headline.fadeInDown
+      h2.headline On your mark.
       = f.error :base
-      = f.button :submit
-
-
+      = f.button :submit, 'Start Race'
+      .wide-btn
+        h3.big-link.back-btn
+          span.fa.fa-chevron-left
+          ' prev
 

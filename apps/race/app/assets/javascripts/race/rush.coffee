@@ -29,6 +29,8 @@ class @Rush
     @standingsBtn.click =>
       _clearAll()
       @standings.toggle()
+
+
     @updateBtn.click =>
       _clearAll()
       @update.toggle()
