@@ -3,7 +3,7 @@ $ ->
     parent = $(this).parent().parent()
     next = parent.next()
     parent.hide()
-    next.addClass('animated-two flipInY').show()
+    next.addClass('animated-two fadeInRight').show()
     next.find('.fa-new-rush').addClass('animated-two')
     parent.removeClass('fadeInLeft')
 

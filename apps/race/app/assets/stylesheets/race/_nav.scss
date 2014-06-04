@@ -4,12 +4,12 @@
     @include row;
 
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
-    background: white;
-    position: fixed;
-    bottom: 0;
+    // background: white;
+    // position: fixed;
+    // bottom: 0;
     width: 100%;
   }
 
@@ -20,11 +20,11 @@
     display: block;
     margin-top: 0.15em;
     margin-bottom: 0.15em;
-    border-right: 1px solid $tan;
+    // border-right: 1px solid $coffee;
     &:last-child {
       border: none;
     }
   }
-  a { color: $tanner; }
+  a { color: $coffee; }
 
 }

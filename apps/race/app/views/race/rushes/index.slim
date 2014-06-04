@@ -1,6 +1,6 @@
 .l-wrapper#rush-container
   - @rushes.each_with_index do |rush, i|
-    .rush-wrapper data-id="rush_#{rush.id}" id="#{rush.id}"
+    .rush-wrapper.animated.fadeInDown data-id="rush_#{rush.id}" id="#{rush.id}"
         = render 'entry',     rush: rush, index: i
         = render 'standings', rush: rush, index: i
         = render 'update',    rush: rush, index: i
