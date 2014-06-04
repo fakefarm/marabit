@@ -1,4 +1,4 @@
-.l-wrapper.animated.fadeInDown
+.l-wrapper.animated.fadeInDown.new-race-wrapper
   = simple_form_for(@race) do |f|
     = f.error_notification
     .stage#race-name
@@ -61,7 +61,7 @@
       = f.error :base
       = f.button :submit, 'Start Race'
       .wide-btn
-        h3.big-link.back-btn
+        h3.big-link.back-btn.simple
           span.fa.fa-chevron-left
           ' prev
 
