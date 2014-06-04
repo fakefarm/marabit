@@ -3,10 +3,10 @@
     .rank
       h1 1st
     .completed
-      h3.current-status= personal_score(@updates, rush)
+      h3.current-status content="telephone=no"= personal_score(@updates, rush)
   .details-wrapper
     .title
-      h2.headline= rush.name
+      h2.headline content="telephone=no"= rush.name
     .links-wrapper
       .action-item.standing-area data-rush='id_#{index}'
         h4.big-link.fa.fa-group
